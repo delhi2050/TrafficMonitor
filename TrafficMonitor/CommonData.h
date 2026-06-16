@@ -352,7 +352,7 @@ struct TaskBarSettingData : public PublicSettingData
 //选项设置中“常规设置”的数据
 struct GeneralSettingData
 {
-    bool check_update_when_start{ true };
+    bool check_update_when_start{ false };
     int update_source{};                    //更新源。0: GitHub; 1: Gitee
     bool auto_run{ false };
     bool auto_run_by_task_scheduler{ false };   //是否通过任务计划程序实现开机自启
