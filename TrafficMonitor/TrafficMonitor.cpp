@@ -530,6 +530,7 @@ void CTrafficMonitorApp::DPIFromWindow(CWnd* pWnd)
 
 void CTrafficMonitorApp::CheckUpdate(bool message)
 {
+    return; // 禁用更新
     if (m_checking_update)      //如果还在检查更新，则直接返回
         return;
     CFlagLocker update_locker(m_checking_update);

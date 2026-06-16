@@ -20,6 +20,7 @@ void CUpdateHelper::SetUpdateSource(UpdateSource update_source)
 
 bool CUpdateHelper::CheckForUpdate()
 {
+    return false; // 禁用更新
     wstring version_info;
     //使用GitHub更新源
     if (m_update_source == UpdateSource::GitHubSource)

@@ -82,6 +82,7 @@ int PluginVersion::GetSubVersion(size_t index) const
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 bool CPluginUpdateHelper::CheckForUpdate()
 {
+    return false; // 禁用更新
     m_latest_versions.clear();
     std::wstring url;
     //更新源为Gitee
